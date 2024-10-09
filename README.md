@@ -22,9 +22,9 @@ User-Agent: curl/8.5.0
 """
 
 parsed = parse(raw_request)
-print(parsed.headers)  # Access headers
-print(parsed.body)     # Access body
-print(parsed.url)      # Access URL
+print(parsed.headers)  # Access headers (dictionary format)
+print(parsed.body)     # Access body 
+print(parsed.path)      # Access requested path (/foo/bar)
 ```
 
 ## Features

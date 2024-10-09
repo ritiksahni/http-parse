@@ -19,4 +19,4 @@ def parse(raw_request: str) -> HTTPRequest:
     return HTTPRequest(raw_request)
 
 __all__ = ['parse', 'HTTPRequest']
-__version__ = "0.1.4"
+__version__ = "0.1.5"
