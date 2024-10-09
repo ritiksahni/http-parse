@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "http_parse"
+version = "0.1.4"
+authors = [
+  { name="Ritik Sahni", email="ritik@ritiksahni.com" },
+]
+description = "A simple HTTP request parser."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ritiksahni/http_parse"
+"Bug Tracker" = "https://github.com/ritiksahni/http_parse/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/http_parse"]
+
+[tool.hatch.build]
+include = [
+    "src/**/*.py",
+    "src/**/*.typed",
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/",
+    "LICENSE",
+    "README.md",
+]
